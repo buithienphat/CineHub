@@ -14,10 +14,8 @@ function Navbar({}: Props) {
   const handleScorll = () => {
     if (window.scrollY > 100) {
       setChangeBgColor(true);
-      console.log("check effect sroll");
     } else {
       setChangeBgColor(false);
-      console.log("check effect sroll");
     }
   };
 
@@ -32,8 +30,8 @@ function Navbar({}: Props) {
   return (
     <div
       className={`navbar ${
-        changeBgColor ? "bg-blue-300" : "bg-transparent"
-      } duration-300`}
+        changeBgColor ? "bg-black-1 shadow-2xl" : "bg-transparent"
+      } duration-500 transition-[background]`}
     >
       <Link href={"/"}>
         <img src="/assets/logo.png" alt="Movie Logo" className="logo" />

@@ -149,15 +149,15 @@
 
 /* Movie */
 .movie-card {
-  @apply relative h-24 min-w-48 sm:h-32 sm:min-w-60 md:h-36 md:min-w-72 cursor-pointer hover:outline-white duration-300;
+  @apply relative h-24 min-w-48 sm:h-32 sm:min-w-60 md:h-36 md:min-w-72 cursor-pointer rounded-lg overflow-hidden hover:outline-white duration-300;
 }
 
 .thumbnail {
-  @apply object-cover w-full h-full rounded-lg;
+  @apply object-cover w-full h-full duration-300;
 }
 
 .border {
-  @apply absolute inset-0 rounded-lg border-4 border-transparent hover:border-white duration-300;
+  @apply absolute inset-0 rounded-lg border-2 border-transparent hover:border-white duration-300;
 }
 
 /* Modal */
